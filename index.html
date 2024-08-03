@@ -14,10 +14,11 @@
         .navbar {
             overflow: hidden;
             background-color: #333;
+            display: flex;
+            justify-content: center;
         }
 
-        .navbar a {
-            float: left;
+        .navbar a, .dropbtn {
             font-size: 16px;
             color: white;
             text-align: center;
@@ -26,24 +27,8 @@
         }
 
         .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px; 
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #ddd;
-            color: black.
+            position: relative;
+            display: inline-block;
         }
 
         .dropdown-content {
@@ -52,24 +37,28 @@
             background-color: #f9f9f9;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1.
+            z-index: 1;
         }
 
         .dropdown-content a {
-            float: none;
             color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            text-align: left.
+            text-align: left;
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd.
+            background-color: #ddd;
         }
 
         .dropdown:hover .dropdown-content {
-            display: block.
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
         }
     </style>
 </head>
@@ -93,35 +82,6 @@
             <div class="dropdown-content">
                 <a href="#link2-1">Subopción 2-1</a>
                 <a href="#link2-2">Subopción 2-2</a>
-                <a href="#link2-3">Subopción 2-3</a>
-            </div>
-        </div> 
-        <div class="dropdown">
-            <button class="dropbtn">Opción 3 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#link3-1">Subopción 3-1</a>
-                <a href="#link3-2">Subopción 3-2</a>
-                <a href="#link3-3">Subopción 3-3</a>
-            </div>
-        </div> 
-        <div class="dropdown">
-            <button class="dropbtn">Opción 4 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#link4-1">Subopción 4-1</a>
-                <a href="#link4-2">Subopción 4-2</a>
-                <a href="#link4-3">Subopción 4-3</a>
-            </div>
-        </div> 
-    </div>
+  
 
-    <div style="padding:20px;">
-        <h1>Bienvenido a Mi Página Web</h1>
-        <p>Esta es una página de ejemplo con un menú de navegación desplegable.</p>
-    </div>
-
-</body>
-</html>
+            
